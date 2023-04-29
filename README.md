@@ -14,3 +14,12 @@
 1. `ros2 run example1 dynamic_params_server`
 2. `ros2 topic echo /params`
 3. `ros2 run example1 dynamic_params_client`
+
+## example2
+メインノードの中でサブノードを作成するサンプル。  
+メインにネームスペースをつけるとサブもネームスペースがつくことが確認できる。  
+
+### 実行手順
+1. `ros2 run example2 main_class --ros-args -r __ns:=/hoge`
+2. `ros2 topic list`でトピック名確認
+3. `ros2 node list`でノード名確認
