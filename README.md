@@ -1,4 +1,8 @@
 # ros2_example
+[![RepoSize]](https://img.shields.io/github/repo-size/YumaMatsumura/ros2_example)
+[![LastCommit]](https://img.shields.io/github/last-commit/YumaMatsumura/ros2_example)
+[![BuildAndTest](https://github.com/YumaMatsumura/ros2_example/actions/workflows/build.yml)](https://img.shields.io/github/actions/workflow/status/YumaMatsumura/ros2_example/build.yml)
+
 ## example1
 動的にパラメータを変更するサンプル。
 
