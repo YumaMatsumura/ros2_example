@@ -1,0 +1,5 @@
+load_plugins:
+  ros__parameters:
+    plugins: ["sample_plugin"]
+    sample_plugin:
+      plugin: "example3::SamplePlugin"

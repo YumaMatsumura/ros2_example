@@ -1,0 +1,6 @@
+<library path="plugin_library">
+  <class type="example3::SamplePlugin" base_class_type="example3::PluginBase">
+    <description>This is a plugin for sample.</description>
+  </class>
+</library>
+

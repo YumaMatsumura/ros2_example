@@ -23,3 +23,13 @@
 1. `ros2 run example2 main_class --ros-args -r __ns:=/hoge`
 2. `ros2 topic list`でトピック名確認
 3. `ros2 node list`でノード名確認
+
+## example3
+プラグインをロードするサンプル。  
+サンプルのプラグインでは、タイマー関数でstring型のデータをパブリッシュする。  
+
+### 実行手順
+1. `ros2 launch example3 load_plugin.launch.py`
+2. `ros2 lifecycle set /load_plugins configure`
+3. `ros2 lifecycle set /load_plugins activate`
+4. `ros2 topic echo /sample`でサンプルプラグインからトピックが出ていることが確認できる。  
