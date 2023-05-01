@@ -3,6 +3,12 @@
 ![](https://img.shields.io/github/last-commit/YumaMatsumura/ros2_example)
 [![BuildAndTest](https://img.shields.io/github/actions/workflow/status/YumaMatsumura/ros2_example/build.yml)](https://github.com/YumaMatsumura/ros2_example/actions/workflows/build.yml)
 
+## dockerを使用する場合
+1. `docker build -t ros2-example-image:v1 .`
+2. `docker run --rm -it --name ros2-example-container --env ROS_DOMAIN_ID=1 ros2-example-image:v1`
+3. `cd ~/ros2_ws && colcon build`
+4. `source ~/.bashrc`
+
 ## example1
 動的にパラメータを変更するサンプル。
 
