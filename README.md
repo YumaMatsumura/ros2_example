@@ -43,3 +43,18 @@
 2. `ros2 lifecycle set /load_plugins configure`
 3. `ros2 lifecycle set /load_plugins activate`
 4. `ros2 topic echo /sample`でサンプルプラグインからトピックが出ていることが確認できる。  
+
+## example4
+サブスクライブしたデータをros2 bagで保存するサンプル。  
+
+## 実行手順
+1. `ros2 run example4 bag_recorder`
+2. `ros2 topic pub /sample std_msgs/msg/String "{data: 'sample'}"`
+3. Ctrl+Cで保存を停止する。  
+4. `cd ~/ros2_ws/src/ros2_example/example4/bag`
+5. `ros2 bag play sample_bag/`
+6. `ros2 topic echo /sample`でトピックが保存されていることを確認。  
+
+
+
+
