@@ -47,7 +47,7 @@
 ## example4
 サブスクライブしたデータをros2 bagで保存するサンプル。  
 
-## 実行手順
+### 実行手順
 1. `ros2 run example4 bag_recorder`
 2. `ros2 topic pub /sample std_msgs/msg/String "{data: 'sample'}"`
 3. Ctrl+Cで保存を停止する。  
@@ -55,6 +55,10 @@
 5. `ros2 bag play sample_bag/`
 6. `ros2 topic echo /sample`でトピックが保存されていることを確認。  
 
+## example5
+behavior_treeを読み込み、実行するサンプル。  
 
+### 実行手順 
+1. `ros2 run example5 bt_engine`
 
 

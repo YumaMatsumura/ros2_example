@@ -18,5 +18,6 @@ jobs:
             example2
             example3
             example4
+            example5
             example_msgs
             example_util
