@@ -9,7 +9,7 @@ BagRecorder::BagRecorder(const rclcpp::NodeOptions & options)
   std::string bag_file;
   
   this->declare_parameter<std::string>(
-    "bag_file", "/home/yuma/humble/git_ws/src/ros2_example/example4/bag/sample_bag");
+    "bag_file", "/path/to/sample_bag");
   this->get_parameter("bag_file", bag_file);
   
   writer_ = std::make_unique<rosbag2_cpp::Writer>();
